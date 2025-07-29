@@ -8,9 +8,14 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <link
       rel="stylesheet"
-      href="./styles/main.scss"
+      href="./styles/style.css"
     />
     <script
       src="scripts/main.js"
@@ -25,13 +30,16 @@
           <img src="images/Logo.png" alt="Nothing (r) logo">
         </a>
 
-        <a href="#" class="icon icon--phone">
+        <div class="header__icons">
+          <a href="#" class="icon icon--phone">
 
-        </a>
+          </a>
 
-        <a href="#" class="icon icon--menu">
+          <a href="#" class="icon icon--menu">
 
-        </a>
+          </a>
+        </div>
+
       </div>
 
       <div class="header_bottom">
@@ -43,25 +51,25 @@
 
     </aside>
 
-    <main>
-      <section>
+    <main class="main">
+      <section class="recommended">
         <h2>Recommended</h2>
       </section>
 
-      <section>
+      <section class="categories">
         <h2>Browse Nothing products by category</h2>
       </section>
 
-      <section>
-        <h2>About us</h2>
+      <section class="about-us">
+        <h2>About uss</h2>
       </section>
 
-      <section>
+      <section class="contacts">
         <h2>Contact us</h2>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
 
     </footer>
   </body>
