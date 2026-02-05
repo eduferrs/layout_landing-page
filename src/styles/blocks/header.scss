@@ -10,10 +10,15 @@
 
     &__bottom {
         padding-bottom: 40px;
+
         @include contentPaddingInline;
 
         @include onTablet {
             padding-bottom: 65px;
+        }
+
+        @include onDesktop {
+            padding-bottom: 92px;
         }
     }
 
@@ -29,6 +34,9 @@
         @include onTablet {
             font-size: 48px;
         }
+
+        @include onDesktop {
+            font-size: 56px;
+        }
     }
 }
-

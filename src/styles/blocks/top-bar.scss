@@ -1,6 +1,8 @@
 .top-bar {
     padding-block: 24px;
+
     @include contentPaddingInline;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +21,6 @@
     }
 
     &__logo {
-        display: flex;
         @include onTablet {
             width: 172px;
             height: 24px;
