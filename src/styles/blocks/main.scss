@@ -1,17 +1,19 @@
 .main {
-    display: grid;
-    row-gap: 96px;
-    padding-block: 96px;
+    background-color: #fff;
+    
+    &__content {
+        display: grid;
+        row-gap: 96px;
+        padding-block: 96px;
 
-    @include contentPaddingInline;
+        @include onTablet {
+            padding-block: 120px;
+            row-gap: 120px;
+        }
 
-    @include onTablet {
-        padding-block: 120px;
-        row-gap: 120px;
-    }
-
-    @include onDesktop {
-        padding-block: 120px;
-        row-gap: 128px;
-    }
+        @include onDesktop {
+            padding-block: 120px;
+            row-gap: 128px;
+        }
+    }   
 }
