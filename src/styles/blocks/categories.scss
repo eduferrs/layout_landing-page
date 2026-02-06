@@ -1,0 +1,69 @@
+.categories {
+    &__wrapper {
+        display: grid;
+        row-gap: 40px;
+
+        @include onTablet {
+            row-gap: 56px;
+        }
+
+        @include onDesktop {
+            row-gap: 56px;
+        }
+    }
+}
+
+.category {
+    &__photos {
+        @include pageGrid;
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        position: relative;
+        transition: all 300ms ease;
+        z-index: 1;
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 10;
+        }
+
+        &--wide {
+           @include onTablet {
+                grid-column: span 4;
+            }
+
+            @include onDesktop {
+                grid-column: span 8;
+            } 
+        }
+
+        &--square {
+            height: 0;
+            padding-bottom: 100%;
+
+           @include onTablet {
+                grid-column: span 2;
+            }
+
+            @include onDesktop {
+                grid-column: span 4;
+            } 
+        }
+    }
+
+    &__photo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+    }
+}
