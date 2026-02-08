@@ -11,6 +11,37 @@
             row-gap: 56px;
         }
     }
+
+    &__button {
+        width: 280px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #292929; 
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: all 300ms ease;
+        border: solid 2px transparent;
+
+        @include onTablet {
+            width: 600px;
+        }
+
+        @include onDesktop {
+            width: 324px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: #ffffff;
+            color: #292929;
+            border: solid 2px #292929;
+        }
+    }
 }
 
 .category {

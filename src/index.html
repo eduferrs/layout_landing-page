@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" 
         crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
 <!-- #endregion -->
     <body class="page__body">
@@ -176,6 +177,8 @@
 
                                 <h3 class="category__title">Accessories</h3>
                             </article>
+
+                            <a href="#categories" class="categories__button">View all</a>
                         </div>
                     </section>
 
@@ -186,10 +189,10 @@
 
                         <div class="about-us__content">
                             <p class="about-us__description">
-                                We’re a London-based tech company on a mission to remove barriers between people and technology.<br>
+                                We’re a London-based tech company on a mission to remove barriers between people and technology.<br><br>
 
                                 To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.
-                                No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple.<br>
+                                No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple.<br><br>
 
                                 Because beautiful tech shouldn’t be complicated.
                             </p>
@@ -200,6 +203,30 @@
                         <h2 class="section-title section-title--align--left">
                             Contact us
                         </h2>
+
+                        <div class="contacts__wrapper">
+                            <form action="#" method="POST" class="form">
+                                <input type="text" name="name" class="form__field" placeholder="Name" required>
+                                <input type="email" name="email" class="form__field" placeholder="Email" required>
+                                <textarea name="message" class="form__field form__field--textarea" placeholder="Message"></textarea>
+                                <button type="submit" class="form__button">Send</button>
+                            </form>
+                            
+                            <div class="contacts__info">
+                                <h3 class="contacts__title">Phone</h3>
+                                <p class="contacts__content">+1 234 5555-55-55</p>
+
+                                <h3 class="contacts__title">Email</h3>
+                                <p class="contacts__content">hello@nothing.com</p>
+
+                                <h3 class="contacts__title">Address</h3>
+                                <p class="contacts__content">
+                                    400 first ave.<br>
+                                    suite 700<br>
+                                    Minneapolis, MN 55401
+                                </p>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
