@@ -6,6 +6,7 @@
 
     &__wrapper {
         @include pageGrid;
+
         row-gap: 80px;
     }
 
@@ -38,7 +39,7 @@
         transition: color 300ms ease;
 
         &:hover {
-            color: #00acdc;
+            color: #9393A3;
             text-decoration: underline;
         }
     }
